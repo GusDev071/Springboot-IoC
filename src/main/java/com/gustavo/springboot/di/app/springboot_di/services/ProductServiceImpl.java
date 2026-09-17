@@ -3,7 +3,6 @@ package com.gustavo.springboot.di.app.springboot_di.services;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.gustavo.springboot.di.app.springboot_di.models.Product;
@@ -13,8 +12,12 @@ import com.gustavo.springboot.di.app.springboot_di.repositories.ProductRepositor
 @Service 
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired 
+   
     private ProductRepository repository;
+
+    public ProductServiceImpl(ProductRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public List <Product> findAll() {
