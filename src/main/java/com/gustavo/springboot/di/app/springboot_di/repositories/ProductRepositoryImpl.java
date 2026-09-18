@@ -13,8 +13,7 @@ import com.gustavo.springboot.di.app.springboot_di.models.Product;
  
 /* @SessionScope */ // hace que las peticiones sean por session
 /* @RequestScope */ 
-
-@Primary
+@Primary 
 @Repository ("productList") // estos sirve para daele un identificador al repository
 public class ProductRepositoryImpl implements ProductRepository {
 

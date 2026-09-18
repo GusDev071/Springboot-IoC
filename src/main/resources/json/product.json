@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Play Station 5",
+    "price": 11500
+  },
+  {
+    "id": 2,
+    "name": "Xbox Series X",
+    "price": 11000
+  },
+  {
+    "id": 3,
+    "name": "Nintendo Switch 2",
+    "price": 11000
+  },
+  {
+    "id": 4,
+    "name": "Steam Deck",
+    "price": 10000
+  }
+]
