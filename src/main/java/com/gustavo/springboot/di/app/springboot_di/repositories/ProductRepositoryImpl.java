@@ -4,13 +4,18 @@ import  java.util.List;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
+/* import org.springframework.web.context.annotation.RequestScope; */
+/* import org.springframework.web.context.annotation.SessionScope; */
 
 import java.util.Arrays;
 
 import com.gustavo.springboot.di.app.springboot_di.models.Product;
+ 
+/* @SessionScope */ // hace que las peticiones sean por session
+/* @RequestScope */ 
 
-@Primary 
-@Repository 
+@Primary
+@Repository ("productList") // estos sirve para daele un identificador al repository
 public class ProductRepositoryImpl implements ProductRepository {
 
     private List<Product> data;
